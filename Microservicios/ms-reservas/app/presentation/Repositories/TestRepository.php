@@ -2,10 +2,15 @@
 
 namespace App\Presentation\Repositories;
 
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
+
 class TestRepository
 {
-    public function getData()
+    public function hola (Request $request, Response $response) 
     {
-        return "Hello from TestRepository!";
+    $response->getBody()->write("Hello world!");
+        return $response;
+        
     }
 }
