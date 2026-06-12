@@ -1,6 +1,5 @@
-CREATE DATABASE IF NOT EXISTS Restaurante;
-USE Restaurante;
-
+CREATE DATABASE IF NOT EXISTS Pedidos;
+USE Pedidos;
 -- ms-pedidos
 CREATE TABLE pedidos (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
