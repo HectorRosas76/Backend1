@@ -1,4 +1,16 @@
 ###endpoint
 GET http://127.0.0.1:8000/4
 
+### registrar mesa
+POST http://127.0.0.1:8000/reservas
+Content-Type: application/json
 
+{
+    "nombre_cliente": "JuanVargas",
+    "telefono_cliente": "123456",
+    "cantidad_personas": 4,
+    "fecha": "2024-07-01",
+    "hora": "19:00:00",
+    "mesa_id": 1
+}
+}
